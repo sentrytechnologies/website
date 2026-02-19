@@ -10,15 +10,19 @@
     const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.querySelector('.nav-links');
     const revealElements = document.querySelectorAll('.reveal');
+    const scrollIndicator = document.querySelector('.hero-scroll-indicator');
 
     /**
      * Sticky Navigation - Add scrolled class on scroll
+     * Also hide scroll indicator when scrolling
      */
     function handleNavScroll() {
         if (window.scrollY > 50) {
             nav.classList.add('scrolled');
+            if (scrollIndicator) scrollIndicator.classList.add('hidden');
         } else {
             nav.classList.remove('scrolled');
+            if (scrollIndicator) scrollIndicator.classList.remove('hidden');
         }
     }
 
