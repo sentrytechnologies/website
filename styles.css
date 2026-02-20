@@ -419,56 +419,14 @@ ul {
     position: relative;
     width: 100%;
     max-width: 400px;
-    aspect-ratio: 1;
-    background-color: var(--color-steel-gray);
-    border: 1px solid var(--color-border-gray);
     border-radius: 8px;
     overflow: hidden;
 }
 
-.visual-grid {
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(rgba(245, 158, 11, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(245, 158, 11, 0.1) 1px, transparent 1px);
-    background-size: 40px 40px;
-}
-
-.visual-radar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-    border: 1px solid var(--color-sentry-amber);
-    border-radius: 50%;
-    opacity: 0.3;
-}
-
-.visual-radar::before,
-.visual-radar::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid var(--color-sentry-amber);
-    border-radius: 50%;
-    opacity: 0.5;
-}
-
-.visual-radar::before {
-    width: 120px;
-    height: 120px;
-}
-
-.visual-radar::after {
-    width: 40px;
-    height: 40px;
-    background-color: var(--color-sentry-amber);
-    opacity: 0.2;
+.about-map {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ===================================
